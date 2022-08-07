@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6cd8d74571.js" crossorigin="anonymous"></script>
+</head>
+<body onload="cargarDatos(event)">
+    <header></header>
+    <section>
+        <article>
+            <div>
+                <form class="form-datos">
+                    <fieldset>
+                        <div>
+                            <label>
+                                Nombres
+                                <input type="text" id="nombres" value="" placeholder="Por favor ingrese">
+                            </label>
+                            <label>
+                                Apellidos
+                                <input type="text" id="apellidos" value="" placeholder="Por favor ingrese">
+                            </label>
+                            <label>
+                                Fecha de nacimiento
+                                <input type="date" id="cumpleanio" value="" placeholder="Por favor ingrese">
+                            </label>
+                            <div class="container-btn">
+                                <button type="button" id="btnGuardar" onclick="guardarDatosPersona();" class="btnGuardar">
+                                    <i class="fa-solid fa-floppy-disk"></i>
+                                </button>
+                                <button type="reset" id="btnReset" class="btnReset">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                                <input type="hidden" id="accion" value="guardar">
+                                <input type="hidden" id="idDatos" value="0">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container-tabla">
+                <table class="tabla-datos" id="tabla-datos">
+                    <caption>Datos Personales</caption>
+                    <thead>
+                        <tr>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Cumpleaños</th>
+                            <th>Edit/Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
