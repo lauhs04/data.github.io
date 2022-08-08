@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    width: 35%;
+    background-color: rgb(31, 32, 33);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+input{
+    width: 100%;
+}
+
+label{
+    display: block;
+}
+
+label h3{
+    display: inline;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 1rem;
+    width: 70%;
+    color: #ffffff;
+}
+
+fieldset{
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0ch;
+}
