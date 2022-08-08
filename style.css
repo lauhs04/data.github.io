@@ -15,10 +15,13 @@ form{
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    padding: 0.5em;
 }
 
 input{
     width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 label{
@@ -29,9 +32,10 @@ label h3{
     display: inline;
     margin: 0;
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 0.6rem;
     width: 70%;
     color: #ffffff;
+  
 }
 
 fieldset{
@@ -40,4 +44,16 @@ fieldset{
     margin-left: auto;
     margin-right: auto;
     border: 0ch;
+}
+
+.container-btn{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color: rgb(148, 148, 148);
+    font-size: 0.6rem;
 }
